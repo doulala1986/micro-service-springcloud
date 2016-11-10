@@ -1,0 +1,16 @@
+spring:
+   application:
+     name: service-consumer
+   cloud:
+     config:
+       discovery:
+          enabled: true
+          serviceId: service-config
+   profiles:
+     active:
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka1:1112/eureka/,http://eureka2:1113/eureka/
