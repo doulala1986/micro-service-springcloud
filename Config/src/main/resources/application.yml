@@ -8,7 +8,7 @@ spring:
       server:
         git:
           uri: https://github.com/doulala1986/micro-service-springcloud
-          search-paths: Config
+          search-paths: ConfigStore
           username: sodoulala@163.com
           password: samsara86
   rabbitmq:
