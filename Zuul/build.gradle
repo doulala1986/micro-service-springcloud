@@ -27,6 +27,11 @@ repositories {
 
 
 dependencies {
+	compile('org.springframework.cloud:spring-cloud-starter-eureka')
+	compile('org.springframework.cloud:spring-cloud-starter-feign')
+	compile('org.springframework.cloud:spring-cloud-starter-ribbon')
+	compile('org.springframework.cloud:spring-cloud-starter-hystrix')
+	compile('org.springframework.boot:spring-boot-starter-actuator')//for hystrix steam 单服务信息健康分析
 	compile('org.springframework.cloud:spring-cloud-starter-zuul')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

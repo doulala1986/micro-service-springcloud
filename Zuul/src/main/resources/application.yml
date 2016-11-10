@@ -1,0 +1,21 @@
+server:
+  port: 5111
+spring:
+  application:
+    name: service-zuul
+endpoints:
+  restart:
+    enabled: true
+
+eureka:
+  client:
+      registerWithEureka: true
+      fetchRegistry: true
+      serviceUrl:
+        defaultZone: http://eureka1:1111/eureka/,http://eureka2:1112/eureka/
+
+zuul:
+  routes:
+     consumer: #自定义名称
+         serviceId: service-consumer  #eureka服务名称
+         path: /consumer/** # 映射路径

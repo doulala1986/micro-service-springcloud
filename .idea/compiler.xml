@@ -40,6 +40,8 @@
       <module name="Provider_test" target="1.8" />
       <module name="Sleuth_main" target="1.8" />
       <module name="Sleuth_test" target="1.8" />
+      <module name="Turbine_main" target="1.8" />
+      <module name="Turbine_test" target="1.8" />
       <module name="Zuul_main" target="1.8" />
       <module name="Zuul_test" target="1.8" />
     </bytecodeTargetLevel>
