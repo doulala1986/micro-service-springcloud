@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/HystrixDashboard.iml" filepath="$PROJECT_DIR$/.idea/modules/HystrixDashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/HystrixDashboard_main.iml" filepath="$PROJECT_DIR$/.idea/modules/HystrixDashboard_main.iml" group="HystrixDashboard" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/HystrixDashboard_test.iml" filepath="$PROJECT_DIR$/.idea/modules/HystrixDashboard_test.iml" group="HystrixDashboard" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Provider.iml" filepath="$PROJECT_DIR$/.idea/modules/Provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Provider_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Provider_main.iml" group="Provider" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Provider_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Provider_test.iml" group="Provider" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sleuth.iml" filepath="$PROJECT_DIR$/.idea/modules/Sleuth.iml" />
