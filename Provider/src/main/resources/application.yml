@@ -1,0 +1,28 @@
+---
+spring:
+  profiles: server1
+server:
+  port: 2111
+---
+spring:
+  profiles: server2
+server:
+  port: 2112
+---
+eureka:
+  instance:
+    appname: service-provider
+    leaseRenewalIntervalInSeconds: 30 #default 30 seconds
+    leaseExpirationDurationInSeconds: 60 # default 90 seconds
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka1:1111/eureka/,http://eureka2:1112/eureka/
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000

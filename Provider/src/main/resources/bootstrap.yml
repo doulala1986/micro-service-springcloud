@@ -1,0 +1,26 @@
+---
+spring:
+   profiles: server1
+---
+spring:
+   profiles: server2
+---
+spring:
+   application:
+     name: service-provider
+   cloud:
+     config:
+       discovery:
+           enabled: true
+           serviceId: service-config
+   rabbitmq:
+     host: localhost
+     port: 6111
+     username: user
+     password: password
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka1:1111/eureka/,http://eureka2:1112/eureka/

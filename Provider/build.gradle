@@ -4,16 +4,20 @@ buildscript {
 	}
 	repositories {
 		mavenCentral()
+		maven { url 'http://repo.sufor.cc/content/groups/public/' }
+
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath 'org.springframework.build.gradle:propdeps-plugin:0.0.7'
+
 	}
 }
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
-
+apply plugin: 'propdeps'
 jar {
 	baseName = 'provider'
 	version = '0.0.1-SNAPSHOT'
@@ -31,9 +35,15 @@ dependencies {
 	compile('org.springframework.cloud:spring-cloud-starter-eureka')
 	compile('org.springframework.cloud:spring-cloud-starter-feign')
 	compile('org.springframework.cloud:spring-cloud-starter-ribbon')
+	//auto config
+	compile('org.springframework.boot:spring-boot-autoconfigure')
+	optional('org.springframework.boot:spring-boot-configuration-processor')
+	//bus
+	compile('org.springframework.cloud:spring-cloud-starter-bus-amqp')
+
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
-
+compileJava.dependsOn(processResources)
 dependencyManagement {
 	imports {
 		mavenBom "org.springframework.cloud:spring-cloud-dependencies:Camden.SR2"
