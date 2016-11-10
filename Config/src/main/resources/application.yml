@@ -1,0 +1,27 @@
+server:
+  port: 4111
+spring:
+  application:
+    name: server-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/doulala1986/springcloud-config-repo
+          username: sodoulala@163.com
+          password: samsara86
+          search-paths:
+  rabbitmq:
+     host: localhost
+     port: 6111
+     username: user
+     password: password
+
+endpoints:
+  restart:
+    enabled: true
+
+eureka:
+  client:
+      serviceUrl:
+        defaultZone: http://eureka1:1111/eureka/,http://eureka2:1112/eureka/

@@ -1,0 +1,11 @@
+group 'com.ctsi.cloud'
+version '1.0-SNAPSHOT'
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}

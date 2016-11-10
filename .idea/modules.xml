@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Config.iml" filepath="$PROJECT_DIR$/.idea/modules/Config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Config_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Config_main.iml" group="Config" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Config_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Config_test.iml" group="Config" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Consumer.iml" filepath="$PROJECT_DIR$/.idea/modules/Consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Consumer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Consumer_main.iml" group="Consumer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Consumer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Consumer_test.iml" group="Consumer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Eureka.iml" filepath="$PROJECT_DIR$/.idea/modules/Eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Eureka_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Eureka_main.iml" group="Eureka" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Eureka_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Eureka_test.iml" group="Eureka" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HystrixDashboard.iml" filepath="$PROJECT_DIR$/.idea/modules/HystrixDashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HystrixDashboard_main.iml" filepath="$PROJECT_DIR$/.idea/modules/HystrixDashboard_main.iml" group="HystrixDashboard" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HystrixDashboard_test.iml" filepath="$PROJECT_DIR$/.idea/modules/HystrixDashboard_test.iml" group="HystrixDashboard" />
+      <module fileurl="file://$PROJECT_DIR$/Provider/Provider.iml" filepath="$PROJECT_DIR$/Provider/Provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Provider_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Provider_main.iml" group="Provider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Provider_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Provider_test.iml" group="Provider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sleuth.iml" filepath="$PROJECT_DIR$/.idea/modules/Sleuth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sleuth_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Sleuth_main.iml" group="Sleuth" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sleuth_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Sleuth_test.iml" group="Sleuth" />
+      <module fileurl="file://$PROJECT_DIR$/Turbine/Turbine.iml" filepath="$PROJECT_DIR$/Turbine/Turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zuul.iml" filepath="$PROJECT_DIR$/.idea/modules/Zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zuul_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Zuul_main.iml" group="Zuul" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zuul_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Zuul_test.iml" group="Zuul" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/micro-service.iml" filepath="$PROJECT_DIR$/.idea/modules/micro-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/micro-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/micro-service_main.iml" group="micro-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/micro-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/micro-service_test.iml" group="micro-service" />
+    </modules>
+  </component>
+</project>

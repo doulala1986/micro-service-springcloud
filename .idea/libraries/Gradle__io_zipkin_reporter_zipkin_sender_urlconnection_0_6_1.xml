@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.zipkin.reporter:zipkin-sender-urlconnection:0.6.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.sdkman/candidates/gradle/3.1/caches/modules-2/files-2.1/io.zipkin.reporter/zipkin-sender-urlconnection/0.6.1/40d1a7627b46d528103e8b7a371ce63b4b12c27f/zipkin-sender-urlconnection-0.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.sdkman/candidates/gradle/3.1/caches/modules-2/files-2.1/io.zipkin.reporter/zipkin-sender-urlconnection/0.6.1/169943d49e7cdaa55ce9aaf4dcd8f356be1e96a2/zipkin-sender-urlconnection-0.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
