@@ -1,0 +1,4 @@
+from: server2
+server:
+  demo:
+    name: demo-server2
