@@ -31,3 +31,6 @@ spring:
   sleuth:
     sampler:
       percentage: 1.0
+#    keys:
+#      http:
+#        headers:
