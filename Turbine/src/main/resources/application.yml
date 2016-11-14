@@ -1,5 +1,6 @@
 spring:
-  application.name: service-turbine
+  application:
+    name: service-turbine
 server:
   port: 7112
 turbine:

@@ -1,6 +1,5 @@
 server:
   port: 3111
-
 eureka:
   instance:
     appname: service-consumer
@@ -12,8 +11,8 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka1:1111/eureka/,http://eureka2:1112/eureka/
 
-
 #serviceprovider:
+
 ribbon:
     ServerListRefreshInterval: 60000 #刷新时间
     ReadTimeout: 5000 #timeout
@@ -21,10 +20,14 @@ ribbon:
     MaxAutoRetriesNextServer: 1 #重试实例的个数
     ActiveConnectionsLimit: 200 #链接数上限
     OkToRetryOnAllOperations: true #开启失败重试机制
-spring:
-  zipkin:
-    base-url: http://localhost:8111
-    compression:
-      enabled: false
-    flush-interval: 1
 
+ # for sleuth stream
+spring:
+  rabbitmq:
+    host: localhost
+    port: 6111
+    username: user
+    password: password
+  sleuth:
+    sampler:
+      percentage: 1.0

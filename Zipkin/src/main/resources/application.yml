@@ -1,0 +1,18 @@
+server:
+  port: 8111
+spring:
+  application:
+    name: service-zipkin
+  rabbitmq:
+    host: localhost
+    port: 6111
+    username: user
+    password: password
+  sleuth:
+    stream:
+      enabled: false
+zipkin:
+  store:
+    type: mem
+logging:
+  file: build/zipkin-server.log

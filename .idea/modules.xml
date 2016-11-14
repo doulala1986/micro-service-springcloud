@@ -17,12 +17,12 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Provider.iml" filepath="$PROJECT_DIR$/.idea/modules/Provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Provider_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Provider_main.iml" group="Provider" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Provider_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Provider_test.iml" group="Provider" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sleuth.iml" filepath="$PROJECT_DIR$/.idea/modules/Sleuth.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sleuth_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Sleuth_main.iml" group="Sleuth" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sleuth_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Sleuth_test.iml" group="Sleuth" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Turbine.iml" filepath="$PROJECT_DIR$/.idea/modules/Turbine.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Turbine_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Turbine_main.iml" group="Turbine" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Turbine_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Turbine_test.iml" group="Turbine" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zipkin.iml" filepath="$PROJECT_DIR$/.idea/modules/Zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zipkin_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Zipkin_main.iml" group="Zipkin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zipkin_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Zipkin_test.iml" group="Zipkin" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zuul.iml" filepath="$PROJECT_DIR$/.idea/modules/Zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zuul_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Zuul_main.iml" group="Zuul" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zuul_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Zuul_test.iml" group="Zuul" />
