@@ -1,0 +1,12 @@
+eureka1:
+  image: micro-services:1
+  ports:
+    - "1111:8080"
+  environment:
+    - SPRING_PROFILES_ACTIVE=eureka1
+eureka2:
+  image: service-eureka:1
+  ports:
+    - "1112:8080"
+  environment:
+    - SPRING_PROFILES_ACTIVE=eureka2

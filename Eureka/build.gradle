@@ -7,16 +7,17 @@ buildscript {
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath 'com.bmuschko:gradle-docker-plugin:3.0.3'
 	}
 }
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
-
+apply plugin: 'com.bmuschko.docker-remote-api'
 jar {
-	baseName = 'eureka'
-	version = '0.0.1-SNAPSHOT'
+	baseName = 'service-eureka'
+	archiveName = baseName+'.jar'
 }
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -24,7 +25,6 @@ targetCompatibility = 1.8
 repositories {
 	mavenCentral()
 }
-
 
 dependencies {
 	compile('org.springframework.cloud:spring-cloud-starter-eureka')
@@ -37,3 +37,39 @@ dependencyManagement {
 		mavenBom "org.springframework.cloud:spring-cloud-dependencies:Camden.SR2"
 	}
 }
+
+
+import com.bmuschko.gradle.docker.tasks.image.Dockerfile
+import com.bmuschko.gradle.docker.tasks.image.DockerBuildImage
+
+task createDockerfile(type: Dockerfile) {
+	dependsOn build
+	destFile = project.file('build/docker/Dockerfile')
+	from 'hub.sufor.cc/ctsi/java:jessie-oraclejre-8'
+	maintainer 'doulala "sodoulala@163.com"'
+	volume '/tmp'
+	addFile jar.baseName + '.jar','app.jar'
+	runCommand 'bash -c "touch /app.jar"'
+	instruction 'ENTRYPOINT ["java","-jar","/app.jar"]'
+}
+
+task copyJar(type: Copy) {
+	from  "build/libs/${jar.baseName}.jar"
+	into  'build/docker'
+}
+
+
+task buildImage(type: DockerBuildImage) {
+	dependsOn createDockerfile
+	dependsOn copyJar
+	inputDir = createDockerfile.destFile.parentFile
+	tag = 'micro-service/service-eureka'
+	noCache = true
+}
+
+
+
+docker {
+	url = 'http://192.168.99.100:2376'
+}
+
